@@ -10,12 +10,15 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Favorite Resturant List Notes</title>
+    
+    <title>Favorite Restaurant List Notes</title>
 </head>
 <body>
+    
+    <!--Start main page-->
     <div data-role="page" id="home">
         <div data-role="header" data-theme="a">
-            <h2>Favorite Resturants</h2>
+            <h2>Favorite Restaurants</h2>
             <div data-role="navbar" data-theme="a">
                 <ul>
                     <li><a href="#list" data-transition="slideup">Favorite Resturants List Notes</a></li>
@@ -24,54 +27,72 @@
             </div>
         </div>
         <div data-role="content" data-theme="a">
-            This is a website where you can add and keep your Favorite Resturants.
+            This is a website where you can add and keep your Favorite Restaurants.
         </div>
         <div data-role="footer" data-theme="a">
-            <h3>Copyright 2024 by Hexiagon and ...</h3>
+            <h3>Copyright 2024 by Hexiagon and Anh</h3>
         </div>
     </div>
+    
+    <!--end main page-->
 
+    <!--start page 2: Favorite Restaurant List-->
     <div data-role="page" id="list">
         <div data-role="header" data-theme="a">
             <div data-role="navbar" data-theme="a">
                 <ul>
                     <li><a href="#home">Home Page</a></li>
-                    <li><a href="#add">Add your Favorite Resturant Note</a></li>
+                    <li><a href="#add">Add your Favorite Restaurant Note</a></li>
                 </ul>
             </div>
-            <h2>Favorite Resturants List</h2>
+            <h2>Favorite Restaurants List</h2>
             <br><br>
         </div>
         <div data-role="content" data-theme="a">
             <ul id="myul" data-role="listview"></ul>
         </div>
         <div data-role="footer" data-theme="a">
-            <h3>Copyright 2024 by Hexiagon and ...</h3>
+            <h3>Copyright 2024 by Hexiagon and Anh</h3>
         </div>
     </div>
+    <!--end page 2-->
 
+    <!--start page 3: Add Favorite Restaurants-->
     <div data-role="page" id="add">
         <div data-role="header" data-theme="a">
             <div data-role="navbar" data-theme="a">
                 <ul>
                     <li><a href="#home">Home Page</a></li>
-                    <li><a href="#list">Favorite Resturants List Notes</a></li>
+                    <li><a href="#list">Favorite Restaurants List Notes</a></li>
                 </ul>
             </div>
             <h2>Add your Favorite Resturant Note</h2>
         </div>
         <div data-role="content" data-theme="a">
-            Enter Favorite Resturant note priority <br />
+            Enter Favorite Restaurant note priority <br />
             <input type="text" value="" id="priorityInput" /><br />
-            Enter the Favorite Resturant note<br>
+            Enter the Favorite Restaurant note<br>
             <input type="text" value="" id="dataInput" />
-            <label for="select-type">Select a Favorite Resturant Type</label>
+            Enter the Favorite Restaurant Address<br>
+            <input type="text" value="" id="addressInput" />
+            <label for="select-type">Select a Favorite Restaurant Type</label>
             <select name="select-type" id="select-type">
                 <option value="Fast-food">Fast food</option>
                 <option value="Food-truck">Food truck</option>
                 <option value="Cafe">Cafe</option>
             </select>
-            <button id="buttonAdd">Add Favorite Resturant Note</button>
+
+            <!--Star-->
+            <label for="star-rating">Select a Favorite Restaurant Type</label>
+            <select name="star-rating" id="star-rating">
+                <option value="1 Star">1 Star</option>
+                <option value="2 Stars">2 Stars</option>
+                <option value="3 Stars">3 Stars</option>
+                <option value="4 Stars">4 Stars</option>
+                <option value="5 Stars">5 Stars</option>
+            </select>
+
+            <button id="buttonAdd">Add Favorite Restaurant Note</button>
             <br>
             <a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">All Pages:</a>
                 <div data-role="popup" id="popupMenu" data-theme="a">
@@ -83,8 +104,9 @@
                 </div>
         </div>
         <div data-role="footer" data-theme="a">
-            <h3>Copyright 2024 by Hexiagon and ...</h3>
+            <h3>Copyright 2024 by Hexiagon and Anh</h3>
         </div>
     </div>
+    <!--end page 3-->
 </body>
 </html>
